@@ -326,8 +326,10 @@ MarkerLabel_.prototype.onRemove = function () {
   }
   
   // Remove event listeners:
-  for (var i = 0; i < this.listeners_.length; i++) {
-    google.maps.event.removeListener(this.listeners_[i]);
+  if(this.listeners_) {
+    for (var i = 0; i < this.listeners_.length; i++) {
+      google.maps.event.removeListener(this.listeners_[i]);
+    }
   }
 };
 
