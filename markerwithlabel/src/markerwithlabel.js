@@ -655,7 +655,6 @@ MarkerWithLabel.prototype.setMap = function (theMap) {
   this.label.setMap(theMap);
 };
 
-<<<<<<< HEAD
 /**
  * Overrides the standard Marker setOptions function.
  * @param {options} the options to be set.
