@@ -1,53 +1,56 @@
-Utility libraries for Google Maps JavaScript API v3
+[![Build Status](https://travis-ci.org/googlemaps/v3-utility-library.svg?branch=master)](https://travis-ci.org/googlemaps/v3-utility-library)
+[![codecov](https://codecov.io/gh/googlemaps/v3-utility-library/branch/master/graph/badge.svg)](https://codecov.io/gh/googlemaps/v3-utility-library)
+![GitHub contributors](https://img.shields.io/github/contributors/googlemaps/v3-utility-library)
+![TypeScript](https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=blue&color=555555)
+![Apache-2.0](https://img.shields.io/badge/license-Apache-blue)
+
+Google Maps JavaScript API v3 Utilities
 ===================================================
 
 ## Description
 
-In this project you can find a set of utility libraries developed for Google Maps JavaScript API v3:
+In this project you can find a utility packages developed for the Google Maps JavaScript API V3.
 
-- [ArcGIS Server Link for Google Maps JavaScript API V3]
-- [CanvasLayer] 
-- [ExtOverviewMapControl for V3]
-- [Geolocation Marker for Google Maps v3]
-- [Google Earth API for Google Maps v3]  *deprecated*
-- [InfoBox]
-- [InfoBubble]
-- [KeyDragZoom for V3]
-- [MapLabel for Google Maps V3]
-- [MarkerClusterer for Google Maps v3]
-- [MarkerClustererPlus for Google Maps V3]
-- [MarkerManager v3]
-- [MarkerWithLabel for V3]
-- [RichMarker for Google Maps v3]
-- [RouteBoxer]
-- [StyledMarker]
+## Documentation
+
+Documentation for the utility packages below can be found at https://googlemaps.github.io/v3-utility-library/.
+
+## Packages
+> **Note**: Many packages are being moved to individual repositories and placed in the @googlemaps NPM scope!
+
+- @googlemaps/jest-mocks Jest mocks for Google Maps in TypeScript
+- @googlemaps/loader - Dynamic loader for Google Maps script using Promise or callback patterns. **Moved to https://github.com/googlemaps/js-api-loader and published to @googlemaps/js-api-loader.**
+- @googlemaps/ogc - WMS Layers and more(tbd)
+- @google/markerclusterer - Cluster nearby markers. **Please use @googlemaps/markerclustererplus.**
+- @google/markerclustererplus - Extended version of @google/markerclusterer. **Moved to https://github.com/googlemaps/js-markerclustererplus and published to @googlemaps/markerclustererplus.**
+- @googlemaps/markermanager - Show and hide markers based on zoom and bounds to improve performance
+- @google/markerwithlabel - Markers with labels and matching events
+
+## Archive
+
+The following packages have never been officially published and are not maintained. Please open an issue to prioritize their inclusion.
+- ArcGIS Server Link
+- CanvasLayer
+- ExtOverviewMapControl
+- Geolocation Marker
+- InfoBox
+- InfoBubble
+- KeyDragZoom
+- MapLabel
+- RichMarker
+- RouteBoxer
+- StyledMarker
  
+## Other Resources
+- [Google Maps JS Documentation](https://developers.google.com/maps/documentation/javascript/tutorial)
+- [Google Maps JS Reference Documenations](https://developers.google.com/maps/documentation/javascript/reference/)
+- [Google Maps Typings](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/googlemaps) - Community supported `npm i -D @types/googlemaps`
+- [Google Maps JS Samples](https://github.com/googlemaps/js-samples)
+
 ## Support
 
 These libraries are community supported. We're comfortable enough with the stability and features of
 the libraries that we want you to build real production applications on it.
 
-If you find a bug, or have a feature suggestion, please [log an issue][issues]. If you'd like to
-contribute, please read [How to Contribute][contrib].
-
-
-
- 
-[ArcGIS Server Link for Google Maps JavaScript API V3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/arcgislink/docs/reference.html
-[CanvasLayer]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/canvaslayer/docs/reference.html
-[ExtOverviewMapControl for V3]: http://htmlpreview.github.io/?http://github.com/googlemaps/v3-utility-library/blob/master/extoverviewmapcontrol/docs/reference.html
-[Geolocation Marker for Google Maps v3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/geolocationmarker/docs/reference.html
-[Google Earth API for Google Maps v3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/googleearth/docs/reference.html
-[InfoBox]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/infobox/docs/reference.html
-[InfoBubble]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/infobubble/examples/example.html
-[KeyDragZoom for V3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/keydragzoom/docs/reference.html
-[MapLabel for Google Maps V3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/maplabel/docs/reference.html
-[MarkerClusterer for Google Maps v3]: https://googlemaps.github.io/js-marker-clusterer/docs/reference.html
-[MarkerClustererPlus for Google Maps V3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/markerclustererplus/docs/reference.html
-[MarkerManager v3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/markermanager/docs/reference.html
-[MarkerWithLabel for V3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/markerwithlabel/docs/reference.html
-[RichMarker for Google Maps v3]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/richmarker/docs/reference.html
-[RouteBoxer]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/routeboxer/docs/reference.html
-[StyledMarker]: http://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/styledmarker/docs/reference.html
-[issues]: https://github.com/googlemaps/v3-utility-library/issues
-[contrib]: https://github.com/googlemaps/v3-utility-library/blob/master/CONTRIB.md
+If you find a bug, or have a feature suggestion, please [log an issue](https://github.com/googlemaps/v3-utility-library/issues). If you'd like to
+contribute, please read [How to Contribute](CONTRIB.md).
