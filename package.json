@@ -1,6 +1,11 @@
 {
-  "name": "root",
+  "name": "v3-utility-library",
+  "main": "main.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KDS/v3-utility-library.git"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "ci": "npm run lint && npm run test",
@@ -48,5 +53,6 @@
     "typedoc": "^0.15.0",
     "typedoc-plugin-lerna-packages": "^0.2.1",
     "typescript": "^3.7.2"
-  }
+  },
+  "license": "Apache-2.0"
 }
