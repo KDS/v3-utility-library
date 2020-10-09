@@ -1,5 +1,6 @@
 {
   "name": "v3-utility-library",
+  "version": "3.0.0",
   "main": "main.js",
   "private": true,
   "repository": {
